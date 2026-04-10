@@ -1,0 +1,2 @@
+# T20_root_with_apatch-boot-
+T20科大讯飞学习机通过Apatch修补boot分区的方式完成root
