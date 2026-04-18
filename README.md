@@ -18,7 +18,7 @@
 T20科大讯飞学习机通过Apatch修补boot分区的方式完成root <br>
 Warning:进行Root是一项危险的操作。这将会使你的设备不再被讯飞官方的保修认可，同时，你的设备会有无法启动的风险 <br>
 进行下一步视为你已经接受风险，同时自身有一定的玩机水平 <br>
-Part1.提取Boot分区 <br>
+# Part1.提取Boot分区 <br>
 首先，你需要提取Boot分区。 <br>
 如果你的设备是T20,那么可以直接使用我的boot.img,请跳到Part2继续 <br>
 如果你是其他T系列(不含Pro系列，安卓系统版本必须为9）,而且芯片为Unicos(紫光展讯)，那么你可以继续阅读此教程 <br>
@@ -36,23 +36,23 @@ Part1.提取Boot分区 <br>
 此时,输入r boot提取到自己的boot.bin <br>
 将后缀名改成.img方便使用 <br>
 Part1 Done! <br>
-Part2.解锁Bootloader(非常重要!) <br>
+# Part2.解锁Bootloader(非常重要!) <br>
 想办法进入bootloader,然后使用一键解锁BL.bat文件完成所有操作,一路Enter前进即可 <br>
 Part2 Done! <br>
-Part3. 修补Boot.img <br>
+# Part3. 修补Boot.img <br>
 下载Apatch软件或者使用在线修补,得到修补后的boot.img文件,注意此时不能刷入boot.img!!! <br>
 Part3 Done! <br>
-Part4.重新签名Boot.img(非常重要,否则你的设备将无法启动!) <br>
+# Part4.重新签名Boot.img(非常重要,否则你的设备将无法启动!) <br>
 将Resign工具Fork到你的Github Responsibility,然后在Actions中选择sign_one_partition_only <br>
 类型输入boot,文件直链建议使用Airportal的 <br>
 不超过5分钟你就能在Release中下载到image.img(成品修补镜像) <br>
 Part4 Done! <br>
-Part5.刷入boot <br>
+# Part5.刷入boot <br>
 和第一步一样的方式进入FDL2> <br>
 然后输入w boot <你的boot.img位置> <br>
 看到Write Done!后执行reset进入系统 <br>
 Part5 Done! <br>
-Part6.修改System <br>
+# Part6.修改System <br>
 进入系统后你将会十分困惑,因为桌面上并没有Apatch软件 <br>
 无需担心，这是正常现象,只需要想办法安装Apatch就可以管理你已经获得的Root权限了 <br>
 （未完待续) <br>
