@@ -1,4 +1,6 @@
-# T20_root_with_apatch-boot- <br>
+# T20_root_with_apatch-boot <br>
+重大突破!目前可以刷写带有magisk的boot镜像,无需修改system,直接就有magisk了! <br>
+不过你只能装一些模块,如果要装软件(系统版本过高,无法软破解时)还是得修改system
 T20科大讯飞学习机通过Apatch修补boot分区的方式完成root <br>
 Warning:进行Root是一项危险的操作。这将会使你的设备不再被讯飞官方的保修认可，同时，你的设备会有无法启动的风险 <br>
 进行下一步视为你已经接受风险，同时自身有一定的玩机水平 <br>
