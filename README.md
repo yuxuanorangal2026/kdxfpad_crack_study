@@ -55,4 +55,23 @@ Part5 Done! <br>
 # Part6.修改System <br>
 进入系统后你将会十分困惑,因为桌面上并没有Apatch软件 <br>
 无需担心，这是正常现象,只需要想办法安装Apatch就可以管理你已经获得的Root权限了 <br>
-（未完待续) <br>
+**这里提供两种安装方式。** <br>
+1.替换系统应用安装法(不推荐,还可能会变砖) <br>
+你需要有一个**ubuntu20.04及以上**的环境,并且已经有通过`r system`命令提取到的system.bin文件 **(请自行将后缀名改为.img方便使用)** <br>
+在Linux环境下, 执行命令 `sudo mkdir system`(创建system文件夹用于挂载) <br>
+`sudo mount -o rw <你的system.img位置> system`(挂载命令,非常重要!) <br>
+`sudo nautilus`(以最高权限打开文件管理器) <br>
+然后找到你的挂载位置,打开system/app <br>
+在里面找一个不是那么重要的软件(例如iflyOnlineLessonAssist),把里面的apk和apatch的apk替换(确保文件名是原来的) <br>
+在终端继续执行 `sudo umount system.img` <br> 
+刷入system.img,成功Root! <br>
+**2.修改安装器法(强烈推荐)** <br> 
+你需要有一个**ubuntu20.04及以上**的环境,并且已经有通过`r system`命令提取到的system.bin文件(请自行将后缀名改为.img方便使用) <br>
+在Linux环境下, 执行命令 `sudo mkdir system`(创建system文件夹用于挂载) <br>
+`sudo mount -o rw <你的system.img位置> system`(挂载命令,非常重要!) <br> 
+`sudo nautilus`(以最高权限打开文件管理器) <br>
+然后找到你的挂载位置,打开system/priv-app 将从本仓库下载的Default...文件夹拖入替换,PackageInstaller文件夹拖入替换 <br>
+然后在终端执行(非常关键!),`rm -rf libdefcontainer_jni.so`（确保在同一个目录) <br>
+`ln -s ../../../../lib64/libdefcontainer_jni.so libdefcontainer_jni.so` <br> 
+在终端继续执行 `sudo umount system.img` 刷入system.img,成功Root! <br>
+**Part6 Done! 教程结束!** <br>
