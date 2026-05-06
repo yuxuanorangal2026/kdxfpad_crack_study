@@ -65,7 +65,7 @@ Part5 Done! <br>
 在里面找一个不是那么重要的软件(例如iflyOnlineLessonAssist),把里面的apk和apatch的apk替换(确保文件名是原来的) <br>
 在终端继续执行 `sudo umount system.img` <br> 
 刷入system.img,成功Root! <br>
-**2.修改安装器法(强烈推荐)** <br> 
+**2.修改安装器法(强烈推荐),此方法在当下已经过时，请使用修补Boot法** <br> 
 你需要有一个**ubuntu20.04及以上**的环境,并且已经有通过`r system`命令提取到的system.bin文件(请自行将后缀名改为.img方便使用) <br>
 在Linux环境下, 执行命令 `sudo mkdir system`(创建system文件夹用于挂载) <br>
 `sudo mount -o rw <你的system.img位置> system`(挂载命令,非常重要!) <br> 
